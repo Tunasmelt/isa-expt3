@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Create New Survey</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/survey-jquery@1.9.59/survey.jquery.min.js"></script>
 	<script>
@@ -67,11 +67,11 @@
 	            <!-- Add more options if needed -->
 	        </select><br>
 	        <label for="global_offices">Number of Global Offices:</label>
-	        <input type="number" id="global_offices" name="global_offices" required><br>
+	        <input type="number" id="global_offices" name="global_offices" min="0" required><br>
 	        <label for="annual_revenue">Annual Revenue (USD):</label>
-	        <input type="number" id="annual_revenue" name="annual_revenue" required><br>
+	        <input type="number" id="annual_revenue" name="annual_revenue" min="0" required><br>
 	        <label for="employees_worldwide">Number of Employees Worldwide:</label>
-	        <input type="number" id="employees_worldwide" name="employees_worldwide" required><br>
+	        <input type="number" id="employees_worldwide" name="employees_worldwide" min="0" required><br>
 	        <label for="primary_countries">Primary Countries of Operation:</label><br>
 	        <input type="checkbox" id="country1" name="primary_countries" value="country1">
 	        <label for="country1">Country 1</label><br>
@@ -83,24 +83,24 @@
 	        <label for="financial_year_end_date">Financial Year End Date:</label>
 	        <input type="date" id="financial_year_end_date" name="financial_year_end_date" required><br>
 	        <label for="total_assets">Total Assets (USD):</label>
-	        <input type="number" id="total_assets" name="total_assets" required><br>
+	        <input type="number" id="total_assets" name="total_assets" min="0" required><br>
 	        <label for="net_profit_margin">Net Profit Margin (%):</label>
-	        <input type="number" id="net_profit_margin" name="net_profit_margin" required><br>
+	        <input type="number" id="net_profit_margin" name="net_profit_margin" min="0" required><br>
 	        <label for="total_debt">Total Debt (USD):</label>
-	        <input type="number" id="total_debt" name="total_debt" required><br>
+	        <input type="number" id="total_debt" name="total_debt" min="0" required><br>
 	        <label for="ebitda">Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) (USD):</label>
-	        <input type="number" id="ebitda" name="ebitda" required><br>
+	        <input type="number" id="ebitda" name="ebitda" min="0" required><br>
 	        <label for="operating_cash_flow">Operating Cash Flow (USD):</label>
-	        <input type="number" id="operating_cash_flow" name="operating_cash_flow" required><br>
+	        <input type="number" id="operating_cash_flow" name="operating_cash_flow" min="0" required><br>
 	        <!--  -->
 
 	        <h2>Investment And Capital Expenditure</h2>
 	        <label for="capital_expenditure">Capital Expenditure in the Last Financial Year (USD):</label>
-	        <input type="number" id="capital_expenditure" name="capital_expenditure" required><br>
+	        <input type="number" id="capital_expenditure" name="capital_expenditure" min="0" required><br>
 	        <label for="investment_rd">Investment in Research and Development (R&D) (USD):</label>
-	        <input type="number" id="investment_rd" name="investment_rd" required><br>
+	        <input type="number" id="investment_rd" name="investment_rd" min="0" required><br>
 	        <label for="net_profit_margin">Major Investments or Acquisitions in the Last Year:</label>
-	        <input type="number" id="major_investment_acquisition" name="major_investment_acquisition" required><br>
+	        <input type="number" id="major_investment_acquisition" name="major_investment_acquisition" min="0" required><br>
 	        
 	        <h2>Risk Management</h2>
 	        <label for="financialRisks">Top Financial Risks Identified:</label><br>
@@ -118,7 +118,7 @@
 
 	        <h2>Future Outlook</h2>
 	        <label for="revenueGrowth">Expected Revenue Growth for the Next Financial Year (%):</label>
-			<input type="number" id="revenueGrowth" name="revenueGrowth" required> <br>
+			<input type="number" id="revenueGrowth" name="revenueGrowth" min="0" required> <br>
 			<label for="strategicInitiatives">Strategic Initiatives Planned for the Next 2 Years:</label>
 			<input type="text" id="strategicInitiatives" name="strategicInitiatives" required><br>
 			<label for="anticipatedChallenges">Challenges Anticipated in the Global Economic Landscape:</label>
@@ -128,8 +128,8 @@
 			<label for="additionalComments">Any additional comments or insights about your company's financial position or outlook:</label>
 			<input type="text" id="additionalComments" name="additionalComments"><br><br>
 
-			<label for="confirmation">By submitting this form, I confirm that the information provided is accurate to the best of my knowledge.</label>
-			<input type="checkbox" id="confirmation" name="confirmation" required><br>
+			<label for="confirmation"><input type="checkbox" id="confirmation" name="confirmation" required> By submitting this form, I confirm that the information provided is accurate to the best of my knowledge.</label>
+			<br>
 			<button type="submit">Submit</button>
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
